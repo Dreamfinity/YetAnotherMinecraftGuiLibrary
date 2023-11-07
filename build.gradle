@@ -29,15 +29,15 @@ file(projectBuildPropertiesFile).withInputStream { projectBuildProperties.load(i
 project.version = projectBuildProperties.version
 project.buildVersion = projectBuildProperties.buildVersion
 
-group 'com.dreamfinity.' + {rootProject.name}
+group 'org.dreamfinity.' + {rootProject.name}
 version project.version
 
 minecraft {
     version = "1.7.10-10.13.4.1614-1.7.10"
+    mappings = "stable_12"
     runDir = "run"
     replace("@version@": projectBuildProperties.version)
     replace("@debug@": projectBuildProperties.debug)
-    replace("BuildController.internalBuildState()", isClientBuild)
 }
 
 sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
@@ -63,11 +63,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.0'
-    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.13.0'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
-    implementation 'org.dreamfinity:craftbukkit:1.7.10-R0.1:dev'
-    implementation 'com.google.code.gson:gson:2.8.8'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
 

@@ -3,3 +3,6 @@
 /libs/
 /dep*/
 /raw/
+/.idea/
+/run/
+/eclipse/

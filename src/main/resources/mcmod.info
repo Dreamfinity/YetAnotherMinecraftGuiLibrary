@@ -1,13 +1,13 @@
 [
     {
-      "modid": "template",
-      "name": "Mod Template",
-      "description": "A template for minecraft 1.7.10 mod",
+      "modid": "yamgl",
+      "name": "Yet Another Minecraft Gui Library",
+      "description": "A Yet Another Minecraft Gui Library for minecraft 1.7.10",
       "version": "${version}",
       "mcversion": "${mcversion}",
       "updateUrl": "",
-      "authorList": ["Author"],
-      "credits": "All code contributors",
+      "authorList": ["Veritaris"],
+      "credits": "All code contributors and people whose mods inspired me",
       "logoFile": "",
       "screenshots": [],
       "dependencies": []
