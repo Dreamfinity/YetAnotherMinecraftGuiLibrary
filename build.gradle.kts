@@ -14,9 +14,6 @@ buildscript {
     }
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
-        classpath("com.anatawa12.forge:ForgeGradle:1.2-1.0.+") {
-            isChanging = true
-        }
     }
 }
 
@@ -28,7 +25,7 @@ plugins {
 
 val projectBuildPropertiesFile = "build.properties"
 val projectBuildProperties = Properties().apply {
-    load(FileInputStream(File(projectBuildPropertiesFile)))
+    load(FileInputStream(File("$projectDir/$projectBuildPropertiesFile")))
 }
 project.version = projectBuildProperties.getProperty("version")
 project.extra["buildVersion"] = projectBuildProperties.getProperty("buildVersion", "0")

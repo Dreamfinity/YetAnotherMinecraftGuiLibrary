@@ -19,6 +19,7 @@ buildscript {
 
 plugins {
     kotlin("jvm")
+    java
 }
 
 apply(plugin = "forge")
