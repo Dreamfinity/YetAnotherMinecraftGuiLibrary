@@ -1,26 +1,8 @@
 import java.io.FileInputStream
 import java.util.*
 
-buildscript {
-    repositories {
-        mavenCentral()
-        maven {
-            name = "forge"
-            url = uri("https://files.minecraftforge.net/maven")
-        }
-        maven {
-            url = uri("https://cloudrep.veritaris.me/repos")
-        }
-    }
-    dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
-    }
-}
-
 plugins {
-    kotlin("jvm") version "1.7.10" apply false
-    `kotlin-dsl`
-    java
+    kotlin("jvm") version "1.9.21" apply false
 }
 
 val projectBuildPropertiesFile = "build.properties"
@@ -46,15 +28,6 @@ allprojects {
         }
         mavenCentral()
     }
-}
-
-subprojects.forEach { _ ->
-    apply(plugin = "java")
-    apply(plugin = "idea")
-}
-
-dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10")
 }
 
 val semanticVersioning = mapOf(

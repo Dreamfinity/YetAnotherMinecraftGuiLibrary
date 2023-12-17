@@ -1,0 +1,15 @@
+[
+  {
+    "modid": "yamgl",
+    "name": "Yet Another Minecraft Gui Library",
+    "description": "Yet Another Minecraft Gui Library for minecraft 1.7.10",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "updateUrl": "",
+    "authorList": ["Veritaris", "slava_110"],
+    "credits": "All code contributors and people whose mods inspired me",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
